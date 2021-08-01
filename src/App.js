@@ -6,7 +6,13 @@ import Footer from './Footer';
 class App extends react.Component {
 
   render() {
-    return([<Header/>, <Main/>, <Footer/>])
+    return(
+      <>
+      <Header/>
+      <Main/>
+      <Footer/>
+      </>
+    )
   }
 }
 export default App;
