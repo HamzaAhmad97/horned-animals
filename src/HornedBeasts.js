@@ -1,7 +1,7 @@
 import react from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.scss";
-import { Container, row } from "react-bootstrap";
+// import { Container, row } from "react-bootstrap";
 
 class HornedBeasts extends react.Component {
   constructor() {
@@ -20,33 +20,35 @@ class HornedBeasts extends react.Component {
 
   render() {
     return (
-      <Container
-        className="beast"
+      <div
+        className="beast col-xl-2 border m-3 d-flex flex-column"
         onClick={() => this.updateLikes(this.state.clicked)}
       >
-        <row>
-          <h2>{this.props.title}</h2>
-        </row>
-        <row>
+        <h2 className="text-primary text-center mb-3">{this.props.title}</h2>
+
+        <div >
           <img
+            className="img-fluid w-100"
             src={this.props.imageUrl}
             alt={this.props.keyword}
             title={this.props.title}
           />
-        </row>
-        <row>
+        </div>
+        <div className="row">
           <p>{this.props.description}</p>
-        </row>
-        <row>
-          <strong>Horns: {this.props.horns}</strong>
-        </row>
-        <row>
-          <img src="https://img.icons8.com/color/48/000000/like--v3.png" />
-        </row>
-        <row>
-          <strong>{this.state.clicked}</strong>
-        </row>
-      </Container>
+        </div>
+        <div className="row">
+          <strong className="text-center mb-3">Horns: {this.props.horns}</strong>
+        </div>
+        <div className="row align-bottom m-auto">
+          <div className="col">
+            <p className=" text-center w-50 h-100 align-middle ">{this.state.clicked}</p>
+          </div>
+          <div className="col">
+            <img src="https://img.icons8.com/color/48/000000/like--v3.png" />
+          </div>
+        </div>
+      </div>
     );
   }
 }

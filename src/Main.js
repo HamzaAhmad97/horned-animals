@@ -1,12 +1,13 @@
 import react from "react";
 import HornedBeasts from "./HornedBeasts";
 import data from "./data.json";
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.scss";
 class Main extends react.Component {
   render() {
   
     return (
-      <div className="beasts">
+      <div className="beasts container-fluid d-flex justify-content-center flex-wrap">
         {data.map((item) => {
           return (
             <HornedBeasts
