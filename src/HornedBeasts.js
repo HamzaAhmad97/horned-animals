@@ -1,7 +1,5 @@
 import react from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.scss";
-// import { Container, row } from "react-bootstrap";
 
 class HornedBeasts extends react.Component {
   constructor() {

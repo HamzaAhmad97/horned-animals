@@ -2,7 +2,6 @@ import react from "react";
 import HornedBeasts from "./HornedBeasts";
 import data from "./data.json";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.scss";
 class Main extends react.Component {
   render() {
   
