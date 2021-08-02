@@ -1,6 +1,5 @@
 import react from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.scss";
 class Header extends react.Component {
 
   render() {
