@@ -45,5 +45,8 @@
       }
     ],
     "semi": "error"
-  }
+  },
+  "parserOptions": {
+    "sourceType": "module"
+}
 }
