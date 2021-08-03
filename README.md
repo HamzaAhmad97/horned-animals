@@ -1,3 +1,4 @@
+* Lab 02
 ## Number and name of feature: Feature #1: Display images
 
 * Estimate of time needed to complete: 10 mins
@@ -28,3 +29,15 @@ ________________________________
 * Finish time: 11:19 pm
 
 * Actual time needed to complete: 3:19 hrs
+--------------------------------
+* Lab 03
+
+## Number and name of feature: Feature #1: Display a Modal
+
+Estimate of time needed to complete: 30 mins
+
+Start time: 9:00 pm
+
+Finish time: 12:00 am
+
+Actual time needed to complete: still counting ...
