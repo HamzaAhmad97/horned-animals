@@ -1,6 +1,6 @@
 import react from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import { Card, Container, Image, Row, Col } from 'react-bootstrap';
 class HornedBeasts extends react.Component {
   constructor() {
     super();
@@ -18,35 +18,30 @@ class HornedBeasts extends react.Component {
 
   render() {
     return (
-      <div
-        className='beast col-xl-2 border m-3 d-flex flex-column'
+      <Card
+        className='col-xl-2 m-3 d-flex flex-column position-relative'
         onClick={() => this.updateLikes(this.state.clicked)}
       >
-        <h2 className='text-primary text-center mb-3'>{this.props.title}</h2>
+        <Card.Img onClick={this.props.showMod} variant='top' src={this.props.imageUrl} style={{objectFit: 'crop', maxWidth: '100%', maxHeight: '100%'}}/>
+        <Card.Body>
+          <Card.Title>{this.props.title}</Card.Title>
+          <Card.Text>{this.props.description}</Card.Text>
 
-        <div >
-          <img
-            className='img-fluid w-100'
-            src={this.props.imageUrl}
-            alt={this.props.keyword}
-            title={this.props.title}
-          />
-        </div>
-        <div className='row'>
-          <p>{this.props.description}</p>
-        </div>
-        <div className='row'>
-          <strong className='text-center mb-3'>Horns: {this.props.horns}</strong>
-        </div>
-        <div className='row align-bottom m-auto'>
-          <div className='col'>
-            <p className=' text-center w-50 h-100 align-middle '>{this.state.clicked}</p>
-          </div>
-          <div className='col'>
-            <img src='https://img.icons8.com/color/48/000000/like--v3.png' />
-          </div>
-        </div>
-      </div>
+          <Container className='bg-info '>
+            <Row>
+              <Col className=' d-flex flex-row-reverse'>
+                <Image
+                  src='https://img.icons8.com/color/48/000000/like--v3.png'
+                  className=' w-50 '
+                />
+              </Col>
+              <Col className=' d-flex flex-row align-items-center'>
+                <h2 className=' text-center ml-2'>{this.state.clicked}</h2>
+              </Col>
+            </Row>
+          </Container>
+        </Card.Body>
+      </Card>
     );
   }
 }

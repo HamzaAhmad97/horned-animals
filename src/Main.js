@@ -1,12 +1,17 @@
 import react from 'react';
 import HornedBeasts from './HornedBeasts';
-import data from './data.json';
 import 'bootstrap/dist/css/bootstrap.min.css';
 class Main extends react.Component {
+  modalShow = (e) => {
+    this.props.showM(e);
+  };
+ 
   render() {
     return (
-      <div className='beasts container-fluid d-flex justify-content-center flex-wrap'>
-        {data.map((item) => {
+      <div
+        className='beasts container-fluid d-flex justify-content-center flex-wrap'
+      >
+        {this.props.dataArr.map((item, i) => {
           return (
             <HornedBeasts
               title={item.title}
@@ -14,6 +19,8 @@ class Main extends react.Component {
               description={item.description}
               keyword={item.keyword}
               horns={item.horns}
+              key={i}
+              showMod = {this.modalShow}
             />
           );
         })}
