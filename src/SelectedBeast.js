@@ -5,31 +5,27 @@ class SelectedBeadt extends react.Component {
   constructor(props) {
     super(props);
     this.state = {
-      show: false,
+      showMod: this.props.sh,
     };
   }
 
-  change = () => {
-    this.props.updateShow(this.state.show);
-    console.log(this.state.show);
-  };
-  handleModal = () => {
-    this.setState({ show: !this.state.show });
-    this.change();
-    console.log(this.state.show);
-  };
+  hideModal = () => {
+    this.setState({ showMod: false });
+    this.props.hide();
+  }
+
   render() {
     return (
-      <Modal show={this.state.show}>
-        <Modal.Header closeButton>
-          <Modal.Title>{this.props.title}</Modal.Title>
+      <Modal show={this.props.sh}>
+        <Modal.Header>
+          <Modal.Title className='align-middle'>{this.props.title}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Image src={this.props.url} fluid></Image>
-          {this.props.desc}
+          <div>{this.props.desc}</div>
         </Modal.Body>
         <Modal.Footer>
-          <Button onClick={this.handleModal}>Hide</Button>
+          <Button onClick={this.hideModal}>Hide</Button>
         </Modal.Footer>
       </Modal>
     );
