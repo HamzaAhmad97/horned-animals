@@ -19,14 +19,15 @@ class HornedBeasts extends react.Component {
   render() {
     return (
       <Card
-        className='col-xl-2 m-3 d-flex flex-column position-relative'
+        className='col-xl-2 m-3 d-flex flex-column position-relative shadow-lg'
+        style={{height: 'fit-content'}}
         onClick={() => this.updateLikes(this.state.clicked)}
       >
-        <Card.Img onClick={this.props.showMod} variant='top' src={this.props.imageUrl} style={{objectFit: 'crop', maxWidth: '100%', maxHeight: '100%'}}/>
+        <Card.Img onClick={this.props.showMod} variant='top' src={this.props.imageUrl} style={{objectFit: 'crop', maxWidth: '100%'}}/>
         <Card.Body>
           <Card.Title>{this.props.title}</Card.Title>
           <Card.Text>{this.props.description}</Card.Text>
-
+          <Card.Text className='text-center'>Horns: {this.props.horns}</Card.Text>
           <Container className='bg-info '>
             <Row>
               <Col className=' d-flex flex-row-reverse'>

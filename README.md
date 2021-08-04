@@ -8,7 +8,7 @@
 * Finish time: 7:06 pm
 
 * Actual time needed to complete: 2 mins
-________________________________
+
 
 ## Number and name of feature: Feature #2: Allow users to vote for their favorite beast
 
@@ -19,7 +19,7 @@ ________________________________
 * Finish time: 7:23 pm
 
 * Actual time needed to complete: 13 mins
-________________________________
+
 ## Number and name of feature: Feature 3: Bootstrap
 
 * Estimate of time needed to complete: I did not know since I did not have any idea about how Bootsrap and React-Bootsrap work, ao I actually took a short class on Bootstrap with a couple readings
@@ -29,6 +29,7 @@ ________________________________
 * Finish time: 11:19 pm
 
 * Actual time needed to complete: 3:19 hrs
+
 --------------------------------
 * Lab 03
 
@@ -38,6 +39,18 @@ Estimate of time needed to complete: 30 mins
 
 Start time: 9:00 pm
 
-Finish time: 12:00 am
+Finish time: 5:00 pm next day
 
-Actual time needed to complete: still counting ...
+Actual time needed to complete: 4 hrs
+
+---------------------------------------------
+* Lab 04
+## Number and name of feature: Feature #1: Display a Modal
+
+Estimate of time needed to complete: 1 hr
+
+Start time: 3:00 pm
+
+Finish time: 5:00 pm
+
+Actual time needed to complete: 2 hrs
